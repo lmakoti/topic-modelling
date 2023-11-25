@@ -1,6 +1,6 @@
 
 
-<img src="G:\My Drive\Colab Notebooks\[01] Research Papers\assets\notes_logo.png" alt="notes_logo" style="zoom:43%;" />
+<img src="assets\notes_logo.png" alt="notes_logo" style="zoom:43%;" />
 
 ## What is Topic Modelling
 

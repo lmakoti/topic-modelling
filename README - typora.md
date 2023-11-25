@@ -129,7 +129,7 @@ Latent Semantic Analysis (LSA), also known as Latent Semantic Indexing, is a tec
 
 In summary, Latent Semantic Analysis is a method of analysing relationships between a set of documents and the terms they contain by producing a set of concepts related to the documents and terms. It's a way of extracting the underlying meaning or concept from a collection of text, helping in better understanding and processing the information.
 
-
+### Comparison of LDA, NMF and LSM (Complex)
 
 | Feature/Model         | LDA (Latent Dirichlet Allocation)                            | NMF (Non-Negative Matrix Factorization)                      | LSA (Latent Semantic Analysis)                               |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -140,7 +140,7 @@ In summary, Latent Semantic Analysis is a method of analysing relationships betw
 | Handling of Data      | Better for discrete, count-based data (like word counts)     | Works well with count data but also adaptable for other data types | Suitable for continuous data, uses orthogonal linear algebra |
 | Limitations           | Requires pre-setting the number of topics, sensitive to hyperparameters | Cannot model negative data, sensitive to the choice of features | Does not capture polysemy, affected by term frequency        |
 
-
+### Comparison of LDA, NMF and LSM (Simplified)
 
 | Feature/Model         | LDA (Latent Dirichlet Allocation)          | NMF (Non-Negative Matrix Factorization)           | LSA (Latent Semantic Analysis)                               |
 | --------------------- | ------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ |

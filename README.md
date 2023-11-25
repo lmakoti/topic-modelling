@@ -1,6 +1,6 @@
 
 
-<img src="assets\notes_logo.png" alt="notes_logo" style="zoom:43%;" />
+<center><img style="height:90px;margin:0 auto;" src="assets\notes_logo.png" alt="notes_logo" style="zoom:43%;" /></center>
 
 ## What is Topic Modelling
 
@@ -34,27 +34,21 @@ In summary, TF-IDF allows us to evaluate words in documents not just by how ofte
 
 Term Frequency measures how frequently a term occurs in a document. The simplest formula for TF is:
 
-$$
-\text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in a document } d}{\text{Total number of terms in the document } d}
-$$
+$$\text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in a document } d}{\text{Total number of terms in the document } d}$$
 This formula calculates the TF of a term \( t \) in a document \( d \) as the frequency of \( t \) divided by the total number of terms in \( d \).
 
 ### Inverse Document Frequency (IDF) - Corpus Focused
 
 Inverse Document Frequency measures how important a term is within the whole corpus of documents. The formula for IDF is:
 
-$$
- \text{IDF}(t, D) = \log \left( \frac{\text{Total number of documents in the corpus } D}{\text{Number of documents with term } t \text{ in them}} \right) \
-$$
+$$\text{IDF}(t, D) = \log \left( \frac{\text{Total number of documents in the corpus } D}{\text{Number of documents with term } t \text{ in them}} \right) \$$
 Here, \( D \) is the total number of documents in the corpus, and the denominator is the number of documents where the term \( t \) appears. The logarithm of the quotient is used to dampen the effect of IDF.
 
 ### TF-IDF - Combination (Scoring)
 
 TF-IDF is simply the product of TF and IDF:
 
-$$
-\text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \text{IDF}(t, D)
-$$
+$$\text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \text{IDF}(t, D)$$
 This formula combines the frequency of a term in a specific document (TF) with the inverse of its frequency across all documents (IDF), to calculate a weight that represents the importance of the term \( t \) in a specific document \( d \) within the context of a document corpus \( D \).
 
 In summary, TF-IDF increases with the number of times a word appears in a document but is offset by the frequency of the word in the corpus, which helps to control for the fact that some words are generally more common than others.
@@ -63,9 +57,9 @@ In summary, TF-IDF increases with the number of times a word appears in a docume
 
 **Assumptions:** d represents documents and associated document number `n` and `D` is the corpus of all documents `d`.
 
-d1 = `[Thabo is a key player in our team he is the best we have]`
-d2 = `[He is the best player in the entire world]`
-d3 = `[is it really ideal to label players by skill rank]`
+d1 = `[Thabo is a key player in our team he is the best we have]`<br/>
+d2 = `[He is the best player in the entire world]`<br/>
+d3 = `[is it really ideal to label players by skill rank]`<br/>
 
 D = `[d1,d2,d3]`
 
@@ -129,7 +123,7 @@ Latent Semantic Analysis (LSA), also known as Latent Semantic Indexing, is a tec
 
 In summary, Latent Semantic Analysis is a method of analysing relationships between a set of documents and the terms they contain by producing a set of concepts related to the documents and terms. It's a way of extracting the underlying meaning or concept from a collection of text, helping in better understanding and processing the information.
 
-
+### Comparison of LDA, NMF and LSM (Complex)
 
 | Feature/Model         | LDA (Latent Dirichlet Allocation)                            | NMF (Non-Negative Matrix Factorization)                      | LSA (Latent Semantic Analysis)                               |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -140,7 +134,7 @@ In summary, Latent Semantic Analysis is a method of analysing relationships betw
 | Handling of Data      | Better for discrete, count-based data (like word counts)     | Works well with count data but also adaptable for other data types | Suitable for continuous data, uses orthogonal linear algebra |
 | Limitations           | Requires pre-setting the number of topics, sensitive to hyperparameters | Cannot model negative data, sensitive to the choice of features | Does not capture polysemy, affected by term frequency        |
 
-
+### Comparison of LDA, NMF and LSM (Simplified)
 
 | Feature/Model         | LDA (Latent Dirichlet Allocation)          | NMF (Non-Negative Matrix Factorization)           | LSA (Latent Semantic Analysis)                               |
 | --------------------- | ------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ |

@@ -83,7 +83,7 @@ IDF(t, D) = `log(count(D)/count(t))` = log(3/4) = 0.602
 
 In essence, LDA provides a way to automatically discover topics from a large collection of documents, making it a powerful tool for understanding large text datasets.
 
-
+**Python Implementation:** [https://github.com/lmakoti/topic-modelling/lda-python](https://github.com/lmakoti/topic-modelling/blob/main/%5B02%5D%20research_areas/%5B01%5D%20latent_dirichlet_allocation/Latent%20Dirichlet%20Allocation%20(Python).ipynb)
 
 ### 2. Non-Negative Matrix Factorization (NMF) 
 

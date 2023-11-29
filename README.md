@@ -1,6 +1,6 @@
 
 
-<center><img style="height:90px;margin:0 auto;" src="assets\notes_logo.png" alt="notes_logo" style="zoom:43%;" /></center>
+<center><img style="height:90px;margin:0 auto;" src="[01] assets\notes_logo.png" alt="notes_logo" style="zoom:43%;" /></center>
 
 ## What is Topic Modelling
 

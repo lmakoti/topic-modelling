@@ -146,3 +146,10 @@ In summary, Latent Semantic Analysis is a method of analysing relationships betw
 | Output Interpretation | Topics are mixes of words                  | Shows parts making up the data                    | Shows main themes in data                                    |
 | Handling of Data      | Best for word counts                       | Good for counts and other data types              | Works well with varied data types                            |
 | Limitations           | Fixed number of topics, sensitive settings | Can't handle negative numbers, sensitive settings | Struggles with words having multiple meanings, influenced by word counts |
+
+### Reference Papers
+
+| Authors                | Link to Paper                                                | Publication Date |
+| ---------------------- | ------------------------------------------------------------ | ---------------- |
+| Roman Egger, Joanne Yu | [A Topic Modeling Comparison Between LDA, NMF, Top2Vec, and BERTopic to Demystify Twitter Posts](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9120935/) | 06-May-2022      |
+| Maarten Grootendorst   | [BERTopic: Neural topic modeling with a class-based TF-IDF procedure](https://arxiv.org/abs/2203.05794) | 11-Mar-2022      |

@@ -1,9 +1,3 @@
-
-
-<center><img style="height:60px;margin:0 auto;" src="[01] assets\notes_logo.png" alt="Note Logo" /></center>
-
-
-
 ## What is Topic Modelling
 
 **Topic modelling** is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. It's a common tool in the field of natural language processing (NLP) and text mining. Here's a more detailed look at what topic modelling involves:

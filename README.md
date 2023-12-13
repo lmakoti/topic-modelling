@@ -79,7 +79,7 @@ IDF(t, D) = `log(count(D)/count(t))` = log(3/4) = 0.602
 
 LDA provides a way to automatically discover topics from a large collection of documents, making it a powerful tool for understanding large text datasets.
 
-**Python Implementation:** [https://github.com/lmakoti/topic-modelling/lda-python](https://github.com/lmakoti/topic-modelling/blob/main/%5B02%5D%20research_areas/%5B01%5D%20latent_dirichlet_allocation/Latent%20Dirichlet%20Allocation%20(Python).ipynb)
+**Python Implementation:** [https://github.com/lmakoti/topic-modelling/lda-nltk-python](https://github.com/lmakoti/topic-modelling/blob/main/%5B02%5D%20research_areas/%5B01%5D%20latent_dirichlet_allocation/Latent%20Dirichlet%20Allocation%20(Python).ipynb)
 
 ### 2. Non-Negative Matrix Factorization (NMF) 
 
@@ -99,7 +99,7 @@ LDA provides a way to automatically discover topics from a large collection of d
 
 In essence, NMF is a way to uncover hidden patterns in complex data sets by breaking down a large matrix into smaller, meaningful components, all while ensuring that the data stays in the realm of the non-negative.
 
-
+**Python Implementation:** [https://github.com/lmakoti/topic-modelling/nmf-scikit-learn-python](https://github.com/lmakoti/topic-modelling/blob/main/%5B02%5D%20research_areas/%5B02%5D%20non-negative%20matrix%20factorisation/Non-negative%20Matrix%20Factorisation.ipynb)
 
 ## 3. Latent Semantic Model (LSM)
 

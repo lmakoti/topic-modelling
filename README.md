@@ -119,27 +119,45 @@ Latent semantic analysis (LSA), also known as latent semantic indexing, is a tec
 
 In summary, Latent Semantic Analysis is a method of analysing relationships between a set of documents and the terms they contain by producing a set of concepts related to the documents and terms. It's a way of extracting the underlying meaning or concept from a text collection, helping better understand and process the information.
 
+
+
+## 4. Top2Vec
+
+
+
+
+
+
+
+## 5. BERTopic
+
+
+
+
+
+
+
 ### Comparison of LDA, NMF and LSM (Complex)
 
-| Feature/Model         | LDA (Latent Dirichlet Allocation)                            | NMF (Non-Negative Matrix Factorization)                      | LSA (Latent Semantic Analysis)                               |
-| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Basic Concept         | Probabilistic, generative model                              | Matrix factorization technique with non-negativity constraints | Singular Value Decomposition (SVD) of term-document matrix   |
-| Approach              | Assumes documents are mixtures of topics, which are mixtures of words | Factorizes matrices into two non-negative matrices (W and H) | Decomposes the term-document matrix to discover latent concepts |
-| Key Characteristics   | Topics have a Dirichlet prior, providing a richer probabilistic model | Emphasises part-based representation, better for parts-of-whole data | Efficient in capturing the variance in data, good for synonyms |
-| Output Interpretation | Topics are probability distributions over words              | Learns the parts of a whole, each feature is only additive   | Topics are singular vectors, not probability distributions   |
-| Handling of Data      | Better for discrete, count-based data (like word counts)     | Works well with count data but also adaptable for other data types | Suitable for continuous data, uses orthogonal linear algebra |
-| Limitations           | Requires pre-setting the number of topics, sensitive to hyperparameters | Cannot model negative data, sensitive to the choice of features | Does not capture polysemy, affected by term frequency        |
+| Feature/Model         | LDA (Latent Dirichlet Allocation)                            | NMF (Non-Negative Matrix Factorization)                      | LSA (Latent Semantic Analysis)                               | Top2Vec | BERTopic |
+| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------- | -------- |
+| Basic Concept         | Probabilistic, generative model                              | Matrix factorization technique with non-negativity constraints | Singular Value Decomposition (SVD) of term-document matrix   |         |          |
+| Approach              | Assumes documents are mixtures of topics, which are mixtures of words | Factorizes matrices into two non-negative matrices (W and H) | Decomposes the term-document matrix to discover latent concepts |         |          |
+| Key Characteristics   | Topics have a Dirichlet prior, providing a richer probabilistic model | Emphasises part-based representation, better for parts-of-whole data | Efficient in capturing the variance in data, good for synonyms |         |          |
+| Output Interpretation | Topics are probability distributions over words              | Learns the parts of a whole, each feature is only additive   | Topics are singular vectors, not probability distributions   |         |          |
+| Handling of Data      | Better for discrete, count-based data (like word counts)     | Works well with count data but also adaptable for other data types | Suitable for continuous data, uses orthogonal linear algebra |         |          |
+| Limitations           | Requires pre-setting the number of topics, sensitive to hyperparameters | Cannot model negative data, sensitive to the choice of features | Does not capture polysemy, affected by term frequency        |         |          |
 
 ### Comparison of LDA, NMF and LSM (Simplified)
 
-| Feature/Model         | LDA (Latent Dirichlet Allocation)          | NMF (Non-Negative Matrix Factorization)           | LSA (Latent Semantic Analysis)                               |
-| --------------------- | ------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ |
-| Basic Concept         | Probabilistic model for finding topics     | Breaks down data into parts without negatives     | Uses math to find hidden themes                              |
-| Approach              | Mixes topics and words to create documents | Separates data into positive factors only         | Breaks down words and documents                              |
-| Key Characteristics   | Uses probabilities for topics and words    | Only adds, never subtracts parts of data          | Good at finding similar words                                |
-| Output Interpretation | Topics are mixes of words                  | Shows parts making up the data                    | Shows main themes in data                                    |
-| Handling of Data      | Best for word counts                       | Good for counts and other data types              | Works well with varied data types                            |
-| Limitations           | Fixed number of topics, sensitive settings | Can't handle negative numbers, sensitive settings | Struggles with words having multiple meanings, influenced by word counts |
+| Feature/Model         | LDA (Latent Dirichlet Allocation)          | NMF (Non-Negative Matrix Factorization)           | LSA (Latent Semantic Analysis)                               | Top2Vec | BERTopic |
+| --------------------- | ------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ | ------- | -------- |
+| Basic Concept         | Probabilistic model for finding topics     | Breaks down data into parts without negatives     | Uses math to find hidden themes                              |         |          |
+| Approach              | Mixes topics and words to create documents | Separates data into positive factors only         | Breaks down words and documents                              |         |          |
+| Key Characteristics   | Uses probabilities for topics and words    | Only adds, never subtracts parts of data          | Good at finding similar words                                |         |          |
+| Output Interpretation | Topics are mixes of words                  | Shows parts making up the data                    | Shows main themes in data                                    |         |          |
+| Handling of Data      | Best for word counts                       | Good for counts and other data types              | Works well with varied data types                            |         |          |
+| Limitations           | Fixed number of topics, sensitive settings | Can't handle negative numbers, sensitive settings | Struggles with words having multiple meanings, influenced by word counts |         |          |
 
 ### Reference Papers
 

@@ -1,0 +1,18 @@
+1. Provide academic source referencing APA style in the documentation notes
+2.1. Top2Vec Paper: 
+- https://arxiv.org/abs/2008.09470
+- https://arxiv.org/pdf/2008.09470.pdf
+
+2.2. Top2Vec Implementation Paper:
+- https://top2vec.readthedocs.io/en/latest/Top2Vec.html#how-does-it-work
+
+3.1. LSA Paper: 
+- https://moj-analytical-services.github.io/NLP-guidance/LSA.html
+- https://arxiv.org/pdf/2108.06197.pdf
+- https://arxiv.org/pdf/1402.0543.pdf
+- https://arxiv.org/ftp/arxiv/papers/2207/2207.14687.pdf
+
+3.2. LSA Implementation Paper:
+- [Indexing] https://machinelearninggeek.com/latent-semantic-indexing-using-scikit-learn/ 
+- https://web.pdx.edu/~gjay/teaching/mth271_2020/html/17_LSA.html
+- https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2909405083353266/2622605937013888/6410281937148337/latest.html

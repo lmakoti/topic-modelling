@@ -1,22 +1,16 @@
 ## What is Topic Modelling
 
-**Topic modelling** is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. It's a common tool in the field of natural language processing (NLP) and text mining. Here's a more detailed look at what topic modelling involves:
+**Topic modelling** is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents, a common tool in the field of natural language processing (NLP) and text mining. Its purpose is to uncover hidden thematic structures in a large text corpus, aiding in the organisation and understanding of vast collections of textual information. By identifying patterns of word usage across documents and grouping words that frequently occur together, topic modelling highlights recurring themes or topics within the documents. In this context, a "topic" represents a pattern of words, such as those related to politics, sports, or economics in a collection of news articles, each depicted as a collection of words with certain probabilities of occurrence within that topic.
 
-1. **Purpose**: Topic modelling uncovers hidden thematic structures in a large text corpus. Essentially, it helps in organising and understanding large collections of textual information.
-2. **How it Works**: It identifies word usage patterns across documents and groups words that frequently occur together. By doing so, it can highlight the recurring themes or topics across the documents.
-3. **Topics**: In this context, a "topic" is a recurring pattern of words. For example, in a collection of news articles, you might find topics related to politics, sports, economics, etc. Each topic is represented as a collection of words with certain probabilities of occurring in that topic.
-4. **Common Models**: One of the most popular topic modelling techniques is Latent Dirichlet Allocation (LDA). Other methods include Non-Negative Matrix Factorization (NMF) and Latent Semantic Analysis (LSA).
-5. **Applications**: Topic modelling is used in various fields such as in digital humanities for analysing large archives of texts, in customer service to categorise complaints and queries, in content recommendation systems to understand user preferences, and in academic research for literature review and analysis.
-6. **Limitations**: While powerful, topic modelling has limitations. It doesn't capture the meaning of words (semantics), or the order of words (syntax), or understand context beyond co-occurrence patterns. It also requires good domain knowledge to interpret the topics correctly.
-7. **Interpretation**: The interpretation of the topics and their relevance is subjective and depends on the user's knowledge and the context of the dataset. Fine-tuning parameters and understanding the domain are crucial for effective topic modelling.
+One of the most popular topic modelling techniques is [Latent Dirichlet Allocation (LDA), introduced by Blei, Ng, and Jordan (2003)](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf), alongside other methods like Non-Negative Matrix Factorization (NMF) and [Latent Semantic Analysis (LSA), which were developed by Lee and Seung (1999) and Deerwester et al. (1990)](https://napier.primo.exlibrisgroup.com/permalink/44NAP_INST/19n0mho/cdi_openaire_primary_doi_dedup_e07b9809ac7d8f096992f8362d7a8a7b), respectively. Topic modelling has diverse applications across digital humanities, customer service, content recommendation systems, and academic research, facilitating the analysis of large text archives, categorisation of complaints and queries, understanding user preferences, and literature review and analysis.
 
-In summary, topic modelling is a method for automatically organising, understanding and summarising large collections of textual data by discovering patterns of word usage that suggest themes or topics within the data.
+However, topic modelling has limitations. **It does not capture the semantics or syntax of words, nor does it understand context beyond co-occurrence patterns, requiring substantial domain knowledge for accurate interpretation**. The interpretation of topics and their relevance is subjective, depending on the user's knowledge and dataset context, with parameter tuning and domain understanding being crucial for effective application.
 
 
 
 ## Term Frequency - Inverse Document Frequency
 
-**TF-IDF, which stands for Term Frequency-Inverse Document Frequency**, is a statistical measure used to evaluate a word that is important to a document in a collection or corpus of documents. It's often used in text mining and information retrieval. Here's a simple breakdown of what TF-IDF means and how it works:
+**TF-IDF, which stands for Term Frequency-Inverse Document Frequency** is another statistical measure used in text mining and information retrieval to evaluate the importance of a word to a document within a corpus. Term Frequency (TF) reflects how often a word appears in a document, suggesting that more frequent words carry more significance. Inverse Document Frequency (IDF) measures a word's commonality across all documents, with rare words receiving higher scores. The combination of TF and IDF, as discussed in foundational texts by Salton & McGill (1983) and further elaborated by Manning, Raghavan, & Schütze (2008), highlights words that are not only prevalent in a particular document but also rare across the entire corpus, thus filtering out common words and emphasizing document-specific terms.
 
 1. **Term Frequency (TF)**: This is simply how often a word appears in a document. The idea is that the more often a word appears in a document, the more important it is for that document. For example, if the word "apple" appears five times in a document, its term frequency is higher compared to a word that appears only once.
 
@@ -165,3 +159,11 @@ In summary, Latent Semantic Analysis is a method of analysing relationships betw
 | ---------------------- | ------------------------------------------------------------ | ---------------- |
 | Roman Egger, Joanne Yu | [A Topic Modeling Comparison Between LDA, NMF, Top2Vec, and BERTopic to Demystify Twitter Posts](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9120935/) | 06-May-2022      |
 | Maarten Grootendorst   | [BERTopic: Neural topic modeling with a class-based TF-IDF procedure](https://arxiv.org/abs/2203.05794) | 11-Mar-2022      |
+
+- Blei, D. M., Ng, A. Y., & Jordan, M. I. (2003). Latent Dirichlet Allocation. *Journal of Machine Learning Research, 3*, 993-1022.
+- Deerwester, S., Dumais, S. T., Furnas, G. W., Landauer, T. K., & Harshman, R. (1990). Indexing by Latent Semantic Analysis. *Journal of the American Society for Information Science, 41*(6), 391-407.
+- Lee, D. D., & Seung, H. S. (1999). Learning the parts of objects by non-negative matrix factorization. *Nature, 401*(6755), 788-791.
+- Blei, D. M. (2012). Probabilistic topic models. *Communications of the ACM, 55*(4), 77-84.
+- Salton, G., & McGill, M. J. (1983). *Introduction to Modern Information Retrieval.* McGraw-Hill.
+- Manning, C. D., Raghavan, P., & Schütze, H. (2008). *Introduction to Information Retrieval.* Cambridge University Press.
+- Ramos, J. (2003). Using TF-IDF to Determine Word Relevance in Document Queries. *Proceedings of the First Instructional Conference on Machine Learning*.

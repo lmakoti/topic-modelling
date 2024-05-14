@@ -25,7 +25,7 @@ def normalize_flesch_kincaid(text, max_scale=20):
 
 def get_toxicity_score(text):
     """Calculates the toxicity score using the Detoxify model."""
-    results = Detoxify('original').predict(text)
+    results = Detoxify('multilingual').predict(text)
     toxicity = results['toxicity']
     return toxicity
 

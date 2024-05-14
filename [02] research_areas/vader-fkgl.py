@@ -1,6 +1,7 @@
 from pdfminer.high_level import extract_text
 from nltk.sentiment import SentimentIntensityAnalyzer
 import textstat
+from detoxify import Detoxify
 
 
 def extract_text_from_pdf(pdf_path):
@@ -22,14 +23,23 @@ def normalize_flesch_kincaid(text, max_scale=20):
     return normalized_fk / max_scale  # Normalize to a range of 0-1
 
 
+def get_toxicity_score(text):
+    """Calculates the toxicity score using the Detoxify model."""
+    results = Detoxify('original').predict(text)
+    toxicity = results['toxicity']
+    return toxicity
+
+
 def calculate_acceptability(text):
     """Calculates the acceptability score based on text analysis."""
     fk_score = normalize_flesch_kincaid(text)
     vader_score = get_vader_score(text)
+    toxicity_score = get_toxicity_score(text)
     print(fk_score)
     print(vader_score)
-    # Weighted sum of normalized FK score (65%) and VADER score (35%)
-    acceptability = 0.65 * fk_score + 0.35 * vader_score
+    print(toxicity_score)
+    # Weighted sum of normalized FK score (50%), VADER score (30%), and toxicity score (20%)
+    acceptability = 0.5 * fk_score + 0.3 * vader_score + 0.2 * (1 - toxicity_score)
     return acceptability
 
 
